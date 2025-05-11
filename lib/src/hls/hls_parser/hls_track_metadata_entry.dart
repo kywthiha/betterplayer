@@ -28,5 +28,5 @@ class HlsTrackMetadataEntry {
   }
 
   @override
-  int get hashCode => Object.hash(groupId, name, Object.hashAll(variantInfos));
+  int get hashCode => Object.hash(groupId, name, Object.hashAll(variantInfos ?? []));
 }
